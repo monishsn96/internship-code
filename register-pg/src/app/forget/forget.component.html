@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>!Forget password</title>
+    <link href="/src/app/app.component.html" rel="import" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link href="/node_modules/modern-normalize.css/modern-normalize.css" rel="stylesheet" />
+<link href="/node_modules/@cds/core/global.min.css" rel="stylesheet" />
+<link href="/node_modules/@cds/city/css/bundles/default.min.css" rel="stylesheet" />
+    <meta name="description" content="Our first page" />
+    <meta name="keywords" content="html tutorial template" />
+    <style>
+
+            
+            * {
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+      }
+      .frm-cnt {
+          display: flex;
+          height: 98vh;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          text-align:center;
+      }
+      .frm-cnt .form-wrap h1 {
+          text-align: center;
+          margin: 0px 0px 20px;
+          font-size: 19px;
+      }
+
+      .frm-cnt .form-wrap {
+          background: #fff;
+          padding: 15px 20px;
+      }
+      .frm-cnt .form-wrap .frm-box {
+          margin: 0px 0px 15px;
+      }
+
+      .frm-cnt  .frm-box input[type="text"]{
+          padding: 5px 8px;
+          border-radius: 3px;
+          border: 1px solid #353535;
+          width: 70%;
+      }
+      .frm-cnt .form-wrap .frm-sub {
+          display: flex;
+          justify-content: center;
+      }
+      .frm-cnt .form-wrap .frm-sub input[type="submit"] {
+          padding: 4px 10px;
+          border: none;
+          border-radius: 2px;
+          background: #353535;
+          color: #fff;
+          font-weight: 800;
+          cursor: pointer;
+          font-size: 16px;
+      }
+      body{
+        background-color:#e4e4e4;
+      }
+            .btn{
+               background-color:#c73124;
+               border-radius:5px;
+               margin-top:10px;
+            }
+            .form-wrap{
+              box-shadow: 5px 5px 5px #999099;
+               width:250px;
+            }
+    </style>
+  </head>
+  <body>
+    <div id="abc">
+      <div class="frm-cnt">
+        <form action="#" method="POST" class="form-wrap">
+          <h1>RESET PASSWORD</h1>
+          <p>please enter your user Id</p>
+          <div class="frm-box">
+            <input type="text" placeholder="Register email ID" />
+          </div>
+          <div class="frm-sub">
+            <button class="btn" margin-top="20px" type="submit">submit</button>
+          </div>
+          <div>
+          <p>back to <a routerLink="login" href="#">login</a>
+          </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+

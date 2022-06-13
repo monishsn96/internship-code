@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Glassmorphism login Form Tutorial in html css</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link href="/node_modules/modern-normalize.css/modern-normalize.css" rel="stylesheet" />
+<link href="/node_modules/@cds/core/global.min.css" rel="stylesheet" />
+<link href="/node_modules/@cds/city/css/bundles/default.min.css" rel="stylesheet" />
+    <!--Stylesheet-->
+    <style media="screen">
+      *,
+*:before,
+
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    
+}
+.background .shape{
+    
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background-image: url('https://getwallpapers.com/wallpaper/full/1/a/e/1447370-cool-simple-hd-wallpaper-1920x1080-windows-7.jpg');
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background-image: url('https://getwallpapers.com/wallpaper/full/1/a/e/1447370-cool-simple-hd-wallpaper-1920x1080-windows-7.jpg');
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 520px;
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(100px);
+    border: 2px solid rgba(193, 12, 12, 0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color:rgb(49, 35, 35);
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+    
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+.abcde{
+    background-image: url('https://getwallpapers.com/wallpaper/full/1/a/e/1447370-cool-simple-hd-wallpaper-1920x1080-windows-7.jpg');
+    background-color: white;
+}
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder{
+    color: black;
+}
+#B{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #e94c4c;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+  
+}
+.social div{
+  background:rgba(11, 85, 233, 0.916);
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #cebdbd;
+  text-align: center;
+  
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.A{
+  color:rgb(64, 125, 224);
+  
+}
+#err{
+    color: red;
+    font-size: small;
+}
+input{
+  background-color: rgb(212, 239, 243);
+  border-radius:20px;
+}
+    </style>
+</head>
+<body  class="abcde">
+ <div id="abcd">
+       <div class="background">
+          <div class="shape"></div>
+          <div class="shape"></div>
+      </div>
+     <form>
+        <h3 >Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" (keyup)="blursEvent($event)" placeholder="Email or Phone" id="username">
+       <p id="err">{{err}}</p>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button  id="B">Log In</button>
+        <div class="d-flex justify-content-center links">
+       <a class="A" routerLink="/forgetp" >Forget your password</a>
+        </div>
+       <router-outlet></router-outlet>
+       <footer></footer>
+        <script>
+             const button = document.querySelector('cds-button');
+             button.action = 'outline';
+         </script>
+      </form>
+ </div>
+</body>
+</html>
